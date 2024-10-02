@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./Styles/style.css" />
+  </head>
+  <body>
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">
+          <img
+            src="./images/logo.png"
+            alt="EventSphere Logo"
+            class="logo-img"
+          />
+          EventSphere
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <a href="./pages/login.html" class="sign-in">Sign in</a>
+        <a href="./pages/register.html" class="register">Register</a>
+      </div>
+    </nav>
+    <section class="section-hero">
+      <div class="hero">
+        <div class="hero-text-box">
+          <h1 class="heading-primary">
+            <span class="first-word">Join</span> a Thriving Learning Community
+            with Real-Time Webinars and Hands-On Workshops
+          </h1>
+          <p class="hero-description">
+            Empowering learners and educators through interactive, real-time
+            sessions that inspire growth and knowledge. Join live webinars,
+            attend workshops, and access valuable resources — all in one
+            seamless platform.
+          </p>
+          <a class="btn join-webinar margin-right" href="#">Join webinar</a>
+          <a class="btn register-now" href="#">Register now</a>
+        </div>
+        <div>
+          <img class="hero-img" src=".//images/hero.jpg" />
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img
+            src="./images/logo.png"
+            alt="EventSphere logo"
+            class="logo-img"
+          />
+          <h2>EventSphere</h2>
+        </div>
+
+        <div class="newsletter">
+          <h3>Subscribe to our newsletter</h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Input your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">User guides</a></li>
+              <li><a href="#">Webinars</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Plans & Pricing</h4>
+            <ul>
+              <li><a href="#">Personal</a></li>
+              <li><a href="#">Start-up</a></li>
+              <li><a href="#">Organization</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="language-selector">
+            <select name="language" id="language">
+              <option value="en">English</option>
+              <option value="es">Spanish</option>
+              <option value="fr">French</option>
+            </select>
+          </div>
+
+          <p>&copy; Designed by Dheerajketa</p>
+
+          <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

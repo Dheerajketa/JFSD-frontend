@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../Styles/loginstyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="../index.html" class="back-button">&larr;</a>
+      <h3>Let's pick up where you left off!</h3>
+      <div class="form-box">
+        <h3>Sign in</h3>
+        <form id="signin-form" onsubmit="redirectToHome(event)">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+            <a href="#" class="forgot-password">Forgot password?</a>
+          </div>
+          <div class="remember-me">
+            <input type="checkbox" id="remember" name="remember" />
+            <label for="remember">Remember me</label>
+          </div>
+          <button type="submit" class="btn">Sign in</button>
+        </form>
+        <p class="sign-up-text">
+          Don't have an account? <a href="../pages/register.html">Sign up</a>
+        </p>
+        <div class="social-login">
+          <p>OR</p>
+          <div class="social-icons">
+            <button class="google-btn">
+              <img
+                src="../images/icons/google_logo-google_icongoogle-512.webp"
+                alt="Image"
+                class="icons-img google"
+              />
+            </button>
+            <button class="facebook-btn">
+              <img
+                src="../images/icons/facebook.png"
+                alt="Image"
+                class="icons-img"
+              />
+            </button>
+            <button class="apple-btn">
+              <img
+                src="../images/icons/X_icon_2.svg"
+                alt="Image"
+                class="icons-img x"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function redirectToHome(event) {
+        event.preventDefault(); // Prevent the form from submitting
+        // Here you can perform any validation if needed
+        window.location.href = "http://127.0.0.1:5500/project/pages/home.html"; // Redirect to home
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.back-button {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  border-radius: 50px;
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  align-content: center;
+}
+
+.back-button:hover {
+  color: #554bcc;
+}
+
+.form-box {
+  background-color: #fff;
+  padding: 50px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin-top: 20px;
+}
+
+h3 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.name-group {
+  display: flex; /* Use flexbox to align items side by side */
+  justify-content: space-between; /* Space between the fields */
+  margin-bottom: 1px; /* Add some margin at the bottom */
+}
+
+.name-group .input-group {
+  flex: 1; /* Each input group takes equal width */
+  margin-right: 10px; /* Add margin between input groups */
+}
+
+.name-group .input-group:last-child {
+  margin-right: 0; /* Remove margin from the last input group */
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+}
+
+.remember-me input {
+  margin-right: 10px;
+}
+
+.remember-me label a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.remember-me label a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  background-color: #6c63ff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #554bcc;
+}
+
+.sign-up-text {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.sign-up-text a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.or-divider {
+  margin: 20px 0;
+  font-size: 0.85rem;
+  color: #888;
+  position: relative;
+}
+
+.or-divider span {
+  background-color: #fff;
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.or-divider:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  z-index: 0;
+}
+
+.social-login {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-login button {
+  border: none;
+  background-color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.icons-img {
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+}

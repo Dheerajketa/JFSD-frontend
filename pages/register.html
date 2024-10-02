@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../Styles/signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Back Button -->
+      <a href="../index.html" class="back-button">&larr;</a>
+
+      <!-- Heading -->
+
+      <!-- Sign Up Form -->
+      <div class="form-box">
+        <form action="#" method="post">
+          <h3>Sign up</h3>
+          <!-- First Name and Last Name -->
+          <!-- First Name and Last Name -->
+          <div class="name-group">
+            <div class="input-group">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="Input first name"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Input last name"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example.email@gmail.com"
+              required
+            />
+          </div>
+
+          <!-- Password -->
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter at least 8+ characters"
+              required
+            />
+          </div>
+
+          <!-- Terms of Use and Privacy Policy -->
+          <div class="remember-me">
+            <input type="checkbox" id="terms" name="terms" required />
+            <label for="terms">
+              By signing up, I agree with the <a href="#">Terms of Use</a> &
+              <a href="#">Privacy Policy</a>
+            </label>
+          </div>
+
+          <!-- Sign Up Button -->
+          <button type="submit" class="btn">Sign up</button>
+        </form>
+
+        <!-- Login Link -->
+        <p class="sign-up-text">
+          Already have an account? <a href="./login.html">Log in</a>
+        </p>
+
+        <!-- Divider for Social Media Login -->
+        <div class="or-divider">
+          <span>OR</span>
+        </div>
+
+        <!-- Social Login Buttons -->
+        <div class="social-login">
+          <button class="google-btn">
+            <img
+              src="../images/icons/google_logo-google_icongoogle-512.webp"
+              alt="Google"
+              class="icons-img google"
+            />
+          </button>
+          <button class="facebook-btn">
+            <img
+              src="../images/icons/facebook.png"
+              alt="Facebook"
+              class="icons-img"
+            />
+          </button>
+          <button class="apple-btn">
+            <img
+              src="../images/icons/X_icon_2.svg"
+              alt="Apple"
+              class="icons-img x"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
