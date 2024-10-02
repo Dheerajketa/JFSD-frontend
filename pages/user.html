@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventSphere</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../Styles/home.css" />
+    <style>
+      .event-card {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Custom Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <a class="navbar-brand" href="#">Event Sphere</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#">All Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Live Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Webinars</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Host an event</a>
+          </li>
+        </ul>
+        <a class="nav-link" href="#" aria-label="Profile">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9VQLYQnwDR3vhiOz3aMRmhiJ5J82gyQO2_Q&s"
+            alt="Profile"
+            width="30"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h2>Host and Schedule an Event</h2>
+      <form id="event-form">
+        <div class="form-group">
+          <label for="eventName">Event Name</label>
+          <input type="text" class="form-control" id="eventName" required />
+        </div>
+        <div class="form-group">
+          <label for="eventDate">Event Date</label>
+          <input type="date" class="form-control" id="eventDate" required />
+        </div>
+        <div class="form-group">
+          <label for="eventTime">Event Time</label>
+          <input type="time" class="form-control" id="eventTime" required />
+        </div>
+        <div class="form-group">
+          <label for="eventDescription">Description</label>
+          <textarea
+            class="form-control"
+            id="eventDescription"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Schedule Event</button>
+      </form>
+
+      <h2 class="mt-5">Scheduled Events</h2>
+      <div id="scheduled-events" class="mt-3"></div>
+    </div>
+
+    <footer class="footer text-center mt-5">
+      <p>&copy; 2024 Event Sphere. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document
+        .getElementById("event-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Get form values
+          const eventName = document.getElementById("eventName").value;
+          const eventDate = document.getElementById("eventDate").value;
+          const eventTime = document.getElementById("eventTime").value;
+          const eventDescription =
+            document.getElementById("eventDescription").value;
+
+          // Create a new event card
+          const eventCard = document.createElement("div");
+          eventCard.className = "card event-card";
+          eventCard.innerHTML = `
+                <div class="card-body">
+                    <h5 class="card-title">${eventName}</h5>
+                    <p class="card-text">Date: ${eventDate} | Time: ${eventTime}</p>
+                    <p class="card-text">${eventDescription}</p>
+                </div>
+            `;
+
+          // Append the new event card to the scheduled events section
+          document.getElementById("scheduled-events").appendChild(eventCard);
+
+          // Clear the form
+          document.getElementById("event-form").reset();
+        });
+    </script>
+  </body>
+</html>
