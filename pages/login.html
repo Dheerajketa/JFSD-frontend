@@ -12,7 +12,7 @@
       <h3>Let's pick up where you left off!</h3>
       <div class="form-box">
         <h3>Sign in</h3>
-        <form id="signin-form" onsubmit="redirectToHome(event)">
+        <form id="signin-form" method="POST" onsubmit="redirectToHome(event)">
           <div class="input-group">
             <label for="email">Email</label>
             <input
@@ -71,13 +71,22 @@
         </div>
       </div>
     </div>
+
     <script>
-      <script>
-  function redirectToHome(event) {
-    event.preventDefault(); // Prevent the form from submitting
-    window.location.href = "./home.html"; // Redirect to home
-  }
-</script>
-    
+      function redirectToHome(event) {
+        event.preventDefault(); // Prevent the form from submitting
+
+        // Optional: You can grab the form data here if you want to store it
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        // Example of storing form data in sessionStorage (if needed)
+        sessionStorage.setItem('email', email);
+        sessionStorage.setItem('password', password); // Not recommended for passwords in real apps
+
+        // Redirect to home using a relative path
+        window.location.href = "./home.html";
+      }
+    </script>
   </body>
 </html>
