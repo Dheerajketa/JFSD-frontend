@@ -4,7 +4,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.profile-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image doesn't stretch */
+}
 .navbar {
   margin-bottom: 20px;
 }
